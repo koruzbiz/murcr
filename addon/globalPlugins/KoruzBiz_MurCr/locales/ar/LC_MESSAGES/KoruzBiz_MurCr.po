@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+
+msgid "Koruz.biz MurCr"
+msgstr "Koruz.biz MurCr"
+
+msgid "MurCr Project Directory"
+msgstr "مجلد مشروع MurCr"
+
+msgid "Select the project directory folder"
+msgstr "اختر مجلد دليل المشروع"
+
+msgid "An error occurred while identifying the application."
+msgstr "حدث خطأ أثناء تحديد التطبيق."
+
+msgid "An error occurred."
+msgstr "حدث خطأ."
+
+msgid "Invalid procedure or file path."
+msgstr "إجراء أو مسار ملف غير صالح."
+
+msgid "MurCr"
+msgstr "MurCr"
+
+msgid "MurCr not found"
+msgstr "لم يتم العثور على MurCr"
+
+msgid "Opening with MurCr."
+msgstr "يتم الفتح باستخدام MurCr."
+
+msgid "Project folder opened."
+msgstr "تم فتح مجلد المشروع."
+
+msgid "Project folder path could not be found."
+msgstr "تعذر العثور على مسار مجلد المشروع."
+
+msgid "The MurCr add-on is not configured for this application."
+msgstr "إضافة MurCr غير مهيأة لهذا التطبيق."
+
+msgid "The project folder could not be opened."
+msgstr "تعذر فتح مجلد المشروع."
+
+msgid "The selected item is not supported by MurCr."
+msgstr "العنصر المحدد غير مدعوم بواسطة MurCr."
+
+msgid "You cannot proceed without MurCr. Would you like to open the download page?"
+msgstr "لا يمكنك المتابعة بدون MurCr. هل تريد فتح صفحة التنزيل؟"

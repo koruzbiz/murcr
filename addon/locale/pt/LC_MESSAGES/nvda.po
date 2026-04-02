@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+
+msgid "Koruz.biz MurCr – Accessible Audio and Video Trimming and Creation Tools"
+msgstr "Koruz.biz MurCr – Ferramentas de corte e criação de áudio e vídeo"
+
+msgid "MurCr is a fully accessible audio and video trimming, creation, and conversion application developed for blind users. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or create videos using any image you choose."
+msgstr "MurCr é um aplicativo totalmente acessível para corte, criação e conversão de áudio e vídeo, desenvolvido para usuários cegos. Este complemento do NVDA atua como uma ponte entre o NVDA e o MurCr. Ele permite cortar arquivos, dividi-los em partes iguais, convertê-los para diferentes formatos ou criar vídeos usando qualquer imagem que você escolher."
+
+msgid "MurCr allows you to process audio and video files in many different formats. It reduces the risk of errors with features such as timeline overlap detection, video resolution conflict analysis, and other smart management tools. Its fully accessible interface ensures usability for everyone."
+msgstr "MurCr permite processar arquivos de áudio e vídeo em muitos formatos diferentes. Ele reduz o risco de erros com recursos como detecção de sobreposição na linha do tempo, análise de conflitos de resolução de vídeo e outras ferramentas inteligentes de gerenciamento. Sua interface totalmente acessível garante usabilidade para todos."

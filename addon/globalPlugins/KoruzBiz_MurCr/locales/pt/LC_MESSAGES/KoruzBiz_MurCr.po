@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+
+msgid "Koruz.biz MurCr"
+msgstr "Koruz.biz MurCr"
+
+msgid "MurCr Project Directory"
+msgstr "Diretório do projeto MurCr"
+
+msgid "Select the project directory folder"
+msgstr "Selecione a pasta do diretório do projeto"
+
+msgid "An error occurred while identifying the application."
+msgstr "Ocorreu um erro ao identificar o aplicativo."
+
+msgid "An error occurred."
+msgstr "Ocorreu um erro."
+
+msgid "Invalid procedure or file path."
+msgstr "Procedimento ou caminho de arquivo inválido."
+
+msgid "MurCr"
+msgstr "MurCr"
+
+msgid "MurCr not found"
+msgstr "MurCr não encontrado"
+
+msgid "Opening with MurCr."
+msgstr "Abrindo com o MurCr."
+
+msgid "Project folder opened."
+msgstr "Pasta do projeto aberta."
+
+msgid "Project folder path could not be found."
+msgstr "Não foi possível encontrar o caminho da pasta do projeto."
+
+msgid "The MurCr add-on is not configured for this application."
+msgstr "O complemento MurCr não está configurado para este aplicativo."
+
+msgid "The project folder could not be opened."
+msgstr "Não foi possível abrir a pasta do projeto."
+
+msgid "The selected item is not supported by MurCr."
+msgstr "O item selecionado não é compatível com o MurCr."
+
+msgid "You cannot proceed without MurCr. Would you like to open the download page?"
+msgstr "Você não pode continuar sem o MurCr. Gostaria de abrir a página de download?"

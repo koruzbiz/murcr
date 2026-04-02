@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi\n"
+
+msgid "Koruz.biz MurCr"
+msgstr "Koruz.biz MurCr"
+
+msgid "MurCr Project Directory"
+msgstr "MurCr प्रोजेक्ट डायरेक्टरी"
+
+msgid "Select the project directory folder"
+msgstr "प्रोजेक्ट डायरेक्टरी फ़ोल्डर चुनें"
+
+msgid "An error occurred while identifying the application."
+msgstr "एप्लिकेशन की पहचान करते समय त्रुटि हुई।"
+
+msgid "An error occurred."
+msgstr "एक त्रुटि हुई।"
+
+msgid "Invalid procedure or file path."
+msgstr "अमान्य प्रक्रिया या फ़ाइल पथ।"
+
+msgid "MurCr"
+msgstr "MurCr"
+
+msgid "MurCr not found"
+msgstr "MurCr नहीं मिला"
+
+msgid "Opening with MurCr."
+msgstr "MurCr के साथ खोला जा रहा है।"
+
+msgid "Project folder opened."
+msgstr "प्रोजेक्ट फ़ोल्डर खुल गया।"
+
+msgid "Project folder path could not be found."
+msgstr "प्रोजेक्ट फ़ोल्डर का पथ नहीं मिला।"
+
+msgid "The MurCr add-on is not configured for this application."
+msgstr "MurCr ऐड-ऑन इस एप्लिकेशन के लिए कॉन्फ़िगर नहीं है।"
+
+msgid "The project folder could not be opened."
+msgstr "प्रोजेक्ट फ़ोल्डर खोला नहीं जा सका।"
+
+msgid "The selected item is not supported by MurCr."
+msgstr "चयनित आइटम MurCr द्वारा समर्थित नहीं है।"
+
+msgid "You cannot proceed without MurCr. Would you like to open the download page?"
+msgstr "MurCr के बिना आप आगे नहीं बढ़ सकते। क्या आप डाउनलोड पेज खोलना चाहेंगे?"

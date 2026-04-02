@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+msgid "Koruz.biz MurCr"
+msgstr "Koruz.biz MurCr"
+
+msgid "MurCr Project Directory"
+msgstr "Каталог проекта MurCr"
+
+msgid "Select the project directory folder"
+msgstr "Выберите папку каталога проекта"
+
+msgid "An error occurred while identifying the application."
+msgstr "Произошла ошибка при определении приложения."
+
+msgid "An error occurred."
+msgstr "Произошла ошибка."
+
+msgid "Invalid procedure or file path."
+msgstr "Недопустимая процедура или путь к файлу."
+
+msgid "MurCr"
+msgstr "MurCr"
+
+msgid "MurCr not found"
+msgstr "MurCr не найден"
+
+msgid "Opening with MurCr."
+msgstr "Открывается с помощью MurCr."
+
+msgid "Project folder opened."
+msgstr "Папка проекта открыта."
+
+msgid "Project folder path could not be found."
+msgstr "Не удалось найти путь к папке проекта."
+
+msgid "The MurCr add-on is not configured for this application."
+msgstr "Дополнение MurCr не настроено для этого приложения."
+
+msgid "The project folder could not be opened."
+msgstr "Не удалось открыть папку проекта."
+
+msgid "The selected item is not supported by MurCr."
+msgstr "Выбранный элемент не поддерживается MurCr."
+
+msgid "You cannot proceed without MurCr. Would you like to open the download page?"
+msgstr "Вы не можете продолжить без MurCr. Открыть страницу загрузки?"

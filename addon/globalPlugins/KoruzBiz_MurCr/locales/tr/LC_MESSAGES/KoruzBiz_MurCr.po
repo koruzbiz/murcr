@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+
+msgid "Koruz.biz MurCr"
+msgstr "Körüz.biz MurCr"
+
+msgid "MurCr Project Directory"
+msgstr "MurCr proje dizini"
+
+msgid "Select the project directory folder"
+msgstr "Proje dizini klasörünü seçin"
+
+msgid "An error occurred while identifying the application."
+msgstr "Uygulama belirlenirken bir hata oluştu."
+
+msgid "An error occurred."
+msgstr "Bir hata oluştu."
+
+msgid "Invalid procedure or file path."
+msgstr "Geçersiz yordam veya dosya yolu."
+
+msgid "MurCr"
+msgstr "MurCr"
+
+msgid "MurCr not found"
+msgstr "MurCr bulunamadı"
+
+msgid "Opening with MurCr."
+msgstr "MurCr ile açılıyor."
+
+msgid "Project folder opened."
+msgstr "Proje klasörü açıldı."
+
+msgid "Project folder path could not be found."
+msgstr "Proje klasörü yolu bulunamadı."
+
+msgid "The MurCr add-on is not configured for this application."
+msgstr "MurCr eklentisi bu uygulama için yapılandırılmamış."
+
+msgid "The project folder could not be opened."
+msgstr "Proje klasörü açılamadı."
+
+msgid "The selected item is not supported by MurCr."
+msgstr "Seçili öğe MurCr tarafından desteklenmiyor."
+
+msgid "You cannot proceed without MurCr. Would you like to open the download page?"
+msgstr "MurCr olmadan devam edemezsiniz. İndirme sayfasını açmak ister misiniz?"
