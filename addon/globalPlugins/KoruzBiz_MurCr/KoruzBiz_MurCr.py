@@ -460,7 +460,7 @@ def MurCr_prompt_to_install_if_missing():
 
             if res == wx.ID_YES:
                 try:
-                    webbrowser.open("https://Koruz.biz", new=1)
+                    webbrowser.open("https://murtext.org/?page=home-murcr", new=1)
                 except Exception as e:
                     logger.error(f"[Prompt] URL açılamadı: {e}")
             elif res == wx.ID_NO:
@@ -479,12 +479,6 @@ class GlobalPlugin(_BaseGlobalPlugin):
 
         self._murcr_k_tmr = None
         self._murcr_k_beklemede = False
-
-        try:
-            if MurCr_probe_installation_on_load():
-                eklenti_ayarlarini_config_ile_senkronla()
-        except Exception:
-            pass
 
     scriptCategory = tr("MurCr")
 
@@ -505,6 +499,7 @@ class GlobalPlugin(_BaseGlobalPlugin):
         if not MurCr_INSTALLED:
             if not MurCr_probe_installation_on_load():
                 return
+            eklenti_ayarlarini_config_ile_senkronla()
     
         if tekrar >= 1:
             try:
@@ -543,10 +538,6 @@ class GlobalPlugin(_BaseGlobalPlugin):
     # Sınıf fonksiyonları
     def _murcr_proje_dizinini_ac(self):
         logger.info("#! Proje dizini aç tetiklendi !#")
-    
-        if not MurCr_INSTALLED:
-            if not MurCr_probe_installation_on_load():
-                return
     
         try:
             eklenti_ayarlarini_config_ile_senkronla()

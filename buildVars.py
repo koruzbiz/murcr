@@ -22,7 +22,7 @@ addon_info = AddonInfo(
 	#! "MurCr, görme engelli kullanıcılar için geliştirilmiş, tamamen erişilebilir bir ses ve video kırpma, oluşturma ve dönüştürme uygulamasıdır. Bu NVDA eklentisi, NVDA ile MurCr arasında bir köprü görevi görür. Dosyaları kırpmanıza, eşit parçalara ayırmanıza, farklı formatlara dönüştürmenize veya seçtiğiniz herhangi bir görüntüyü kullanarak videolar oluşturmanıza olanak tanır."
 	addon_description=_("""MurCr is a fully accessible audio and video trimming, creation, and conversion application developed for blind users. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or create videos using any image you choose."""),
 	# sürüm
-	addon_version="2.6.2",
+	addon_version="2.6.3",
 	# Bu sürüm için kısa değişiklik günlüğü
 	# Çevirmenler: Eklenti mağazasında gösterilecek bu eklenti sürümü için "yenilikler" içeriği
 	#! "MurCr, birçok farklı formattaki ses ve video dosyalarını işlemenize olanak sağlar. Zaman çizelgesi çakışması tespiti, video çözünürlüğü çakışması analizi ve diğer akıllı yönetim araçları gibi özelliklerle hata riskini azaltır. Tamamen erişilebilir arayüzü herkes için kullanılabilirlik sağlar."
