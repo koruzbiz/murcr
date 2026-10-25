@@ -56,6 +56,7 @@ MurCr_path = os.path.join(
 )
 
 MurCr_INSTALLED = False
+_MurCr_CONFIG_SENKRON_YAPILDI = False
 
 APP_DESKTOP = "desktop"
 APP_EXPLORER = "explorer"
@@ -84,9 +85,22 @@ def eklenti_ayarlarini_config_ile_senkronla():
         logger.error(f"[Config] Senkron hata: {e}")
         return False
 
+def _murcr_config_adaylari():
+    """MurCr'nin sabit config yolu: %APPDATA%\\Koruz_Biz\\murcr\\config.txt (kurulum dizininden bagimsiz)."""
+    adaylar = []
+    for kok in (os.getenv("APPDATA"), os.path.join(os.path.expanduser("~"), "AppData", "Roaming")):
+        if kok:
+            p = os.path.join(kok, "Koruz_Biz", "murcr", "config.txt")
+            if p not in adaylar:
+                adaylar.append(p)
+    return adaylar
+
 def _murcr_config_yolu():
-    appdata = os.getenv("APPDATA") or os.path.join(os.path.expanduser("~"), "AppData", "Roaming")
-    return os.path.join(appdata, "Koruz_Biz", "murcr", "config.txt")
+    adaylar = _murcr_config_adaylari()
+    for p in adaylar:
+        if os.path.isfile(p):
+            return p
+    return adaylar[0]
 
 def murcr_configten_file_pt_oku():
     try:
@@ -94,12 +108,13 @@ def murcr_configten_file_pt_oku():
         if not os.path.isfile(cfg_path):
             logger.info(f"[Config] Bulunamadı: {cfg_path}")
             return None
-        with open(cfg_path, "r", encoding="utf-8", errors="replace") as f:
+        # utf-8-sig: dosya BOM'lu yazilmis olsa da okunur
+        with open(cfg_path, "r", encoding="utf-8-sig", errors="replace") as f:
             data = json.load(f)
         p = (data.get("file_pt") or "").strip()
         if p:
             p = os.path.normpath(p)
-        logger.info(f"[Config] file_pt okundu: {p}")
+        logger.info(f"[Config] {cfg_path} -> file_pt okundu: {p!r}")
         return p if p else None
     except Exception as e:
         logger.error(f"[Config] file_pt okunamadı: {e}")
@@ -517,7 +532,6 @@ class GlobalPlugin(_BaseGlobalPlugin):
         if not MurCr_INSTALLED:
             if not MurCr_probe_installation_on_load():
                 return
-            eklenti_ayarlarini_config_ile_senkronla()
     
         if tekrar >= 1:
             try:
@@ -558,7 +572,9 @@ class GlobalPlugin(_BaseGlobalPlugin):
         logger.info("#! Proje dizini aç tetiklendi !#")
     
         try:
-            eklenti_ayarlarini_config_ile_senkronla()
+            global _MurCr_CONFIG_SENKRON_YAPILDI
+            if not _MurCr_CONFIG_SENKRON_YAPILDI:
+                _MurCr_CONFIG_SENKRON_YAPILDI = bool(eklenti_ayarlarini_config_ile_senkronla())
             p = murcr_configten_file_pt_oku()
             if not p:
                 ui.message(tr("Project folder path could not be found."))
