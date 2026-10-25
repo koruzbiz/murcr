@@ -4,29 +4,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 
-msgid "Koruz.biz MurCr"
-msgstr "Koruz.biz MurCr"
-
-msgid "MurCr Project Directory"
-msgstr "MurCr プロジェクト ディレクトリ"
-
-msgid "Select the project directory folder"
-msgstr "プロジェクト ディレクトリのフォルダーを選択してください"
-
 msgid "An error occurred while identifying the application."
 msgstr "アプリケーションの識別中にエラーが発生しました。"
 
 msgid "An error occurred."
 msgstr "エラーが発生しました。"
 
+msgid "Browse"
+msgstr "参照"
+
 msgid "Invalid procedure or file path."
 msgstr "無効な手順またはファイル パスです。"
+
+msgid "Koruz.biz MurCr"
+msgstr "Koruz.biz MurCr"
 
 msgid "MurCr"
 msgstr "MurCr"
 
 msgid "MurCr not found"
 msgstr "MurCr が見つかりません"
+
+msgid "MurCr Project Directory"
+msgstr "MurCr プロジェクト ディレクトリ"
 
 msgid "Opening with MurCr."
 msgstr "MurCr で開いています。"
@@ -36,6 +36,9 @@ msgstr "プロジェクト フォルダーを開きました。"
 
 msgid "Project folder path could not be found."
 msgstr "プロジェクト フォルダーのパスが見つかりませんでした。"
+
+msgid "Select the project directory folder"
+msgstr "プロジェクト ディレクトリのフォルダーを選択してください"
 
 msgid "The MurCr add-on is not configured for this application."
 msgstr "このアプリケーション用に MurCr アドオンが構成されていません。"

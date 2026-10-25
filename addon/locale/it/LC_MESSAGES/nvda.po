@@ -4,11 +4,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
 
-msgid "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation"
-msgstr "Koruz.biz MurCr – Taglio e creazione accessibile di audio e video"
-
-msgid "MurCr is a fully accessible audio and video trimming, creation, and conversion application developed for blind users. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or create videos using any image you choose."
-msgstr "MurCr è un'applicazione completamente accessibile per il taglio, la creazione e la conversione di audio e video, sviluppata per utenti non vedenti. Questo componente aggiuntivo di NVDA funge da ponte tra NVDA e MurCr. Consente di tagliare file, dividerli in parti uguali, convertirli in diversi formati o creare video utilizzando qualsiasi immagine scelta."
+msgid "Koruz.biz MurCr – Audio & Video Trimming, Adding Transitions / Audio / Subtitles"
+msgstr "Koruz.biz MurCr – Taglio di audio e video, aggiunta di transizioni / audio / sottotitoli"
 
 msgid "MurCr allows you to process audio and video files in many different formats. It reduces the risk of errors with features such as timeline overlap detection, video resolution conflict analysis, and other smart management tools. Its fully accessible interface ensures usability for everyone."
 msgstr "MurCr consente di elaborare file audio e video in molti formati diversi. Riduce il rischio di errori grazie a funzioni come il rilevamento delle sovrapposizioni nella timeline, l'analisi dei conflitti di risoluzione video e altri strumenti intelligenti di gestione. La sua interfaccia completamente accessibile garantisce usabilità per tutti."
+
+msgid "MurCr is a fully accessible application developed for blind users for audio and video trimming, creation, and adding audio, transitions, and subtitles. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or add audio, transition effects, and subtitles to your videos."
+msgstr "MurCr è un'applicazione completamente accessibile per il taglio e la creazione di audio e video e per l'aggiunta di audio, transizioni e sottotitoli, sviluppata per utenti non vedenti. Questo componente aggiuntivo di NVDA funge da ponte tra NVDA e MurCr. Consente di tagliare file, dividerli in parti uguali, convertirli in diversi formati o aggiungere audio, effetti di transizione e sottotitoli ai video."

@@ -4,29 +4,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh\n"
 
-msgid "Koruz.biz MurCr"
-msgstr "Koruz.biz MurCr"
-
-msgid "MurCr Project Directory"
-msgstr "MurCr 项目目录"
-
-msgid "Select the project directory folder"
-msgstr "请选择项目目录文件夹"
-
 msgid "An error occurred while identifying the application."
 msgstr "识别应用程序时发生错误。"
 
 msgid "An error occurred."
 msgstr "发生错误。"
 
+msgid "Browse"
+msgstr "浏览"
+
 msgid "Invalid procedure or file path."
 msgstr "无效的过程或文件路径。"
+
+msgid "Koruz.biz MurCr"
+msgstr "Koruz.biz MurCr"
 
 msgid "MurCr"
 msgstr "MurCr"
 
 msgid "MurCr not found"
 msgstr "未找到 MurCr"
+
+msgid "MurCr Project Directory"
+msgstr "MurCr 项目目录"
 
 msgid "Opening with MurCr."
 msgstr "正在使用 MurCr 打开。"
@@ -36,6 +36,9 @@ msgstr "项目文件夹已打开。"
 
 msgid "Project folder path could not be found."
 msgstr "未找到项目文件夹路径。"
+
+msgid "Select the project directory folder"
+msgstr "请选择项目目录文件夹"
 
 msgid "The MurCr add-on is not configured for this application."
 msgstr "此应用程序未配置 MurCr 插件。"

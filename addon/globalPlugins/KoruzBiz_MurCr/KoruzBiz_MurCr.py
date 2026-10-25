@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
-# Plug-in version: 2.2.2
-# MurCr compatible version: 2.2.2
+# Plug-in version: 3.0.0
+# MurCr compatible version: 3.0.0
 
 import os
 import subprocess
@@ -46,7 +46,7 @@ except Exception:
     Role = None
     ROLE_POPUPMENU = ROLE_MENU = ROLE_MENUITEM = None
 
-ALLOWED_EXTS = (".opus", ".mp3", ".mp4", ".m4a", ".mpeg", ".aac", ".flac", ".ogg", ".wav", ".dat", ".waptt")
+ALLOWED_EXTS = (".aac", ".avi", ".dat", ".flac", ".flv", ".m4a", ".m4v", ".mkv", ".mov", ".mp3", ".mp4", ".mpeg", ".mpg", ".ogg", ".opus", ".ts", ".wav", ".waptt", ".wma")
 
 MurCr_path = os.path.join(
     os.environ.get("LOCALAPPDATA", os.path.join(os.path.expanduser("~"), "AppData", "Local")),
@@ -237,8 +237,8 @@ def MurCr_is_explorer_context():
         return False
 
 def MurCr_get_selected_file_explorer():
-    """Sadece ön plandaki Explorer penceresinden seçili öğenin tam yolunu alır.
-    Seçim yoksa klasör yolunu döndürür; bulunamazsa None.
+    """Sadece ön plandaki Explorer penceresinden seçili öğelerin tam yollarını liste olarak alır.
+    Seçim yoksa klasör yolunu tek elemanlı liste olarak döndürür; bulunamazsa None.
     """
     try:
         import comtypes.client
@@ -265,15 +265,15 @@ def MurCr_get_selected_file_explorer():
                 try:
                     sel = doc.SelectedItems()
                     if sel and getattr(sel, "Count", 0) > 0:
-                        p = sel.Item(0).Path
-                        logger.info(f"[Explorer] Seçili (FG): {p}")
-                        return p
+                        yollar = [sel.Item(i).Path for i in range(sel.Count)]
+                        logger.info(f"[Explorer] Seçili (FG): {yollar}")
+                        return yollar
                 except Exception as e_sel:
                     logger.error(f"[Explorer] FG: SelectedItems hatası: {e_sel}")
                 try:
                     folderPath = doc.Folder.Self.Path
                     logger.info(f"[Explorer] Seçim yok, klasör yolu (FG): {folderPath}")
-                    return folderPath
+                    return [folderPath]
                 except Exception as e_fold:
                     logger.error(f"[Explorer] FG: Folder.Path hatası: {e_fold}")
                 break
@@ -289,7 +289,7 @@ def MurCr_get_selected_file_explorer():
             ps_cmd = r'''powershell -command "& { $sel = (New-Object -ComObject Shell.Application).Windows() | Where-Object { $_.Document.SelectedItems().Count -gt 0 } | ForEach-Object { $_.Document.SelectedItems().Item(0).Path }; Write-Output $sel }"'''
             result = subprocess.check_output(ps_cmd, shell=True, universal_newlines=True).strip()
             logger.info(f"[Explorer] PowerShell sonucu: {result}")
-            return result if result else None
+            return [result.splitlines()[0]] if result else None
         except Exception as e2:
             logger.error(f"[Explorer] PowerShell hatası. f: MurCr_get_selected_file_explorer {e2}")
             return None
@@ -377,8 +377,26 @@ def MurCr_open(path_value=None, source=None):
             logger.info(f"Öğe yolu belirtilmedi. Kaynak: {source}")
             path_value = MurCr_get_selected_file_smart()
 
-        logger.info(f"Alınan yol (ham): {path_value}")
-        fc = file_control(path_value)
+        if isinstance(path_value, (list, tuple)):
+            yollar = [p for p in path_value if p]
+        else:
+            yollar = [path_value] if path_value else []
+
+        logger.info(f"Alınan yol(lar) (ham): {yollar}")
+        kontroller = [file_control(p) for p in yollar] or [file_control(None)]
+
+        if len(kontroller) > 1:
+            gecerli = [k["path"] for k in kontroller if k["ok"] and k["kind"] == "file"]
+            logger.info(f"Çoklu seçim: toplam={len(kontroller)} geçerli={len(gecerli)}")
+            if not gecerli:
+                ui.message(tr("The selected item is not supported by MurCr."))
+                return
+            ui.message(tr("Opening with MurCr."))
+            subprocess.Popen([get_murcr_exe_path(), "/hazir"] + gecerli)
+            logger.info(f"MurCr çalıştırıldı (çoklu dosya): {len(gecerli)} dosya -> {get_murcr_exe_path()}")
+            return
+
+        fc = kontroller[0]
 
         if not fc["ok"]:
             reason = fc.get("reason")
@@ -402,14 +420,14 @@ def MurCr_open(path_value=None, source=None):
         if fc["kind"] == "dir":
             logger.info(f"Dizin seçildi: {real_path}")
             ui.message(tr("Opening with MurCr."))
-            subprocess.Popen([get_murcr_exe_path(), real_path])
+            subprocess.Popen([get_murcr_exe_path(), "/hazir", real_path])
             logger.info(f"MurCr çalıştırıldı (dizin): {real_path} -> {get_murcr_exe_path()}")
             return
 
         file_name = os.path.basename(real_path)
         logger.info(f"Dosya adı: {file_name} | Uzantı: {fc['ext']}")
         ui.message(tr("Opening with MurCr."))
-        subprocess.Popen([get_murcr_exe_path(), real_path])
+        subprocess.Popen([get_murcr_exe_path(), "/hazir", real_path])
         logger.info(f"MurCr çalıştırıldı (dosya): {real_path} -> {get_murcr_exe_path()}")
 
     except Exception as e:

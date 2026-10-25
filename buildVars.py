@@ -15,14 +15,14 @@ addon_info = AddonInfo(
 	# Eklenti özeti/başlığı, genelde kullanıcıya görünen eklenti adı
 	# Çevirmenler: Eklenti yüklemesinde ve eklenti mağazasında gösterilecek
 	# bu eklenti için özet/başlık
-	#! "Körüz.biz MurCr – Erişilebilir Ses ve Video Kırpma ve Oluşturma"
-	addon_summary=_("Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation"),
+	#! "Körüz.biz MurCr – Ses ve Video Kırpma, geçiş / ses / alt yazı ekleme"
+	addon_summary=_("Koruz.biz MurCr – Audio & Video Trimming, Adding Transitions / Audio / Subtitles"),
 	# Eklenti açıklaması
 	# Çevirmenler: Eklenti mağazasındaki eklenti bilgi ekranında gösterilecek uzun açıklama
-	#! "MurCr, görme engelli kullanıcılar için geliştirilmiş, tamamen erişilebilir bir ses ve video kırpma, oluşturma ve dönüştürme uygulamasıdır. Bu NVDA eklentisi, NVDA ile MurCr arasında bir köprü görevi görür. Dosyaları kırpmanıza, eşit parçalara ayırmanıza, farklı formatlara dönüştürmenize veya seçtiğiniz herhangi bir görüntüyü kullanarak videolar oluşturmanıza olanak tanır."
-	addon_description=_("""MurCr is a fully accessible audio and video trimming, creation, and conversion application developed for blind users. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or create videos using any image you choose."""),
+	#! "MurCr, görme engelli kullanıcılar için geliştirilmiş, tamamen erişilebilir bir ses ve video kırpma, oluşturma, ses / geçiş / alt yazı ekleme uygulamasıdır. Bu NVDA eklentisi, NVDA ile MurCr arasında bir köprü görevi görür. Dosyaları kırpmanıza, eşit parçalara ayırmanıza, farklı formatlara dönüştürmenize veya videolarınıza ses ve geçiş efektleri, alt yazı eklemenize olanak tanır."
+	addon_description=_("""MurCr is a fully accessible application developed for blind users for audio and video trimming, creation, and adding audio, transitions, and subtitles. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or add audio, transition effects, and subtitles to your videos."""),
 	# sürüm
-	addon_version="2.6.3",
+	addon_version="3.0.0",
 	# Bu sürüm için kısa değişiklik günlüğü
 	# Çevirmenler: Eklenti mağazasında gösterilecek bu eklenti sürümü için "yenilikler" içeriği
 	#! "MurCr, birçok farklı formattaki ses ve video dosyalarını işlemenize olanak sağlar. Zaman çizelgesi çakışması tespiti, video çözünürlüğü çakışması analizi ve diğer akıllı yönetim araçları gibi özelliklerle hata riskini azaltır. Tamamen erişilebilir arayüzü herkes için kullanılabilirlik sağlar."
@@ -32,21 +32,21 @@ addon_info = AddonInfo(
 	# Eklenti dokümantasyon desteği için URL
 	addon_url="https://MurText.org",
 	# Kaynak kodunun bulunabileceği eklenti deposu URL’si
-	addon_sourceURL=None,
+	addon_sourceURL="https://github.com/koruzbiz/murcr",
 	# Dokümantasyon dosya adı
 	addon_docFileName="readme.html",
 	# Desteklenen minimum NVDA sürümü (örn. "2019.3.0", minor sürüm isteğe bağlı)
 	addon_minimumNVDAVersion="2022.1",
 	# Desteklenen/test edilmiş son NVDA sürümü (örn. "2025.3.0", ideal olarak minimumdan daha yeni)
-	addon_lastTestedNVDAVersion="2025.3",
+	addon_lastTestedNVDAVersion="2026.3",
 	# Eklenti güncelleme kanalı (varsayılan None: kararlı sürümler,
 	# geliştirme sürümleri için "dev" kullanın.)
 	# Ne yaptığınızdan emin değilseniz değiştirmeyin!
 	addon_updateChannel=None,
 	# Eklenti lisansı (örn. GPL 2)
-	addon_license=None,
+	addon_license="GPL v2",
 	# Eklentinin lisanslandığı lisans belgesi için URL
-	addon_licenseURL=None,
+	addon_licenseURL="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
 )
 
 # Eklentinizin kaynaklarını oluşturan Python dosyalarını tanımlayın.

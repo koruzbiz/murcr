@@ -68,7 +68,7 @@ class MurCrSettingsPanel(SettingsPanel):
             btn = self.dirPicker.GetPickerCtrl() if hasattr(self.dirPicker, "GetPickerCtrl") else None
             if btn:
                 try:
-                    btn.SetName(tr("Göz at"))
+                    btn.SetName(tr("Browse"))
                 except Exception:
                     pass
                 def _announce_after_browse_focus(evt):
